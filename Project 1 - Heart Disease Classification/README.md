@@ -2,10 +2,10 @@
 Simple heart disease classifier built on Keras
 
 ## Table of contents
-* [General info](#general-info)
-* [Framework](#framework)
-* [Methodology](#methodology)
-* [Results](#results)
+* [General info](https://github.com/illusionikx/AI07_training_projects/tree/main/Project%201%20-%20Heart%20Disease%20Classification#general-info-general-info)
+* [Framework](https://github.com/illusionikx/AI07_training_projects/tree/main/Project%201%20-%20Heart%20Disease%20Classification#framework-framework)
+* [Methodology](https://github.com/illusionikx/AI07_training_projects/tree/main/Project%201%20-%20Heart%20Disease%20Classification#methodology-methodology)
+* [Results](https://github.com/illusionikx/AI07_training_projects/tree/main/Project%201%20-%20Heart%20Disease%20Classification#results-results)
 
 ## General info {#general-info}
 This project is done to fulfil the requirement for class AI07. The aim of the project is to create a classifier to predict heart disease using data from [Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset) with accuracy at least 90% and training loss and validation difference not more than 15%.
