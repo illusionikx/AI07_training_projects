@@ -7,13 +7,13 @@ Simple heart disease classifier built on Keras
 * [Methodology](https://github.com/illusionikx/AI07_training_projects/tree/main/Project%201%20-%20Heart%20Disease%20Classification#methodology-methodology)
 * [Results](https://github.com/illusionikx/AI07_training_projects/tree/main/Project%201%20-%20Heart%20Disease%20Classification#results-results)
 
-## General info {#general-info}
+## General info
 This project is done to fulfil the requirement for class AI07. The aim of the project is to create a classifier to predict heart disease using data from [Kaggle](https://www.kaggle.com/datasets/johnsmith88/heart-disease-dataset) with accuracy at least 90% and training loss and validation difference not more than 15%.
 
-## Framework {#framework}
+## Framework
 This project is created using Spyder as the main IDE. The main frameworks used in this project are Pandas, Scikit-learn and TensorFlow Keras.
 
-## Methodology {#methodology}
+## Methodology
 ### Data
 Data is imported from Kaggle in form of csv. Preprocessing is not done because the data did not have any discrepancy or missing data. Data is then split into training-test dataset with ratio of 7:3.
 
@@ -29,7 +29,7 @@ Model is then trained with training dataset with the whole dataset as batch size
 
 ![loss](https://github.com/illusionikx/AI07_training_projects/blob/main/Project%201%20-%20Heart%20Disease%20Classification/loss.png)
 
-## Results {#results}
+## Results
 Model is evaluated using test dataset and the following are the results.
 
 ![result](https://github.com/illusionikx/AI07_training_projects/blob/main/Project%201%20-%20Heart%20Disease%20Classification/results.png)
