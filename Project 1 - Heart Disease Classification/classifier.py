@@ -67,7 +67,7 @@ history = model.fit(x_train, y_train,
                     callbacks=[es, tb])
 
 #%% visualize
-plot_model(model, to_file='model.png', rankdir='LR')
+plot_model(model, show_layer_activations=True)
 epochs_x_axis = history.epoch
 
 plt.plot(epochs_x_axis, history.history['binary_accuracy'],
