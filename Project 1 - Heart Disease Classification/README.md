@@ -20,16 +20,16 @@ Data is imported from Kaggle in form of csv. Preprocessing is not done because t
 ### Model
 Model is constructed with feedforward neural network. The structure of the model is as follows.
 
-![model](/model.png)
+![model](https://github.com/illusionikx/AI07_training_projects/blob/main/Project%201%20-%20Heart%20Disease%20Classification/model.png)
 
 Model is then trained with training dataset with the whole dataset as batch size in 300 epochs with early stopping applied. Training stops at epoch 184 and obtain accuracy of 91.4% with validation accuracy of 92.9%
 
-![accuracy](/accuracy.png)
+![accuracy](https://github.com/illusionikx/AI07_training_projects/blob/main/Project%201%20-%20Heart%20Disease%20Classification/accuracy.png)
 
 
-![loss](/loss.png)
+![loss](https://github.com/illusionikx/AI07_training_projects/blob/main/Project%201%20-%20Heart%20Disease%20Classification/loss.png)
 
 ## Results {#results}
 Model is evaluated using test dataset and the following are the results.
 
-![result](/results.png)
+![result](https://github.com/illusionikx/AI07_training_projects/blob/main/Project%201%20-%20Heart%20Disease%20Classification/results.png)
