@@ -1,5 +1,5 @@
 # Project 2 - Productivity Prediction of Garment Employees
-Simple heart disease classifier built on Keras
+Simple productivity regression predictor built on Keras
 
 ## Table of contents
 * [General info](#general-info-general-info)
