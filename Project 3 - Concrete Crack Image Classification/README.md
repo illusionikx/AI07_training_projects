@@ -1,4 +1,4 @@
-# Project 2 - Concrete Crack Image Classification
+# Project 3 - Concrete Crack Image Classification
 Concrete crack image classification using deep neural network.
 
 ## Table of contents
