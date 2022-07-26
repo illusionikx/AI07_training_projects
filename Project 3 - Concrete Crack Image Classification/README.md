@@ -33,3 +33,7 @@ Model is then trained with training dataset with batch size of 32 in 20 epochs w
 Model is evaluated using test dataset and the following are the results.
 
 ![result](results.png)
+
+Example of images that is used with classification written on top. All 9 images are classified accurately.
+
+![example](example.png)
