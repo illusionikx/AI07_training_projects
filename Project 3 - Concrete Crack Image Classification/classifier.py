@@ -118,3 +118,20 @@ plt.show()
 
 #%% predict and show report
 test_result = model.evaluate(val_ds)
+
+#%% deploy
+image_batch, label_batch = val_ds.as_numpy_iterator().next()
+predictions = np.argmax(model.predict(image_batch), axis=1)
+
+plt.figure(figsize=(10, 10))
+for i in range(9):
+    plt.subplot(3, 3, i+1)
+    plt.imshow(image_batch[i].astype('int'))
+
+    if label_batch[i] != predictions[i]:
+        plt.title(f'not a {CLASS_NAMES[predictions[i]]}?')
+    else:
+        plt.title(f'{CLASS_NAMES[predictions[i]]}')
+    x = image_batch[i]
+    plt.axis('off')
+plt.savefig('example.png')
