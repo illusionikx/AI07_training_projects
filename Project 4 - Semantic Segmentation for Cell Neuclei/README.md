@@ -1,5 +1,5 @@
-# Project 3 - Concrete Crack Image Classification
-Concrete crack image classification using deep neural network.
+# Project 4 - Semantic Segmentation for Cell Nuclei
+Cell nuclei semantic segmentation using deep neural network.
 
 ## Table of contents
 * [General info](#general-info-general-info)
@@ -8,21 +8,21 @@ Concrete crack image classification using deep neural network.
 * [Results](#results-results)
 
 ## General info
-This project is done to fulfil the requirement for class AI07. The aim of the project is to create a classifier to classify whether an image of concrete slabs have cracks or not using data from [Mendeley Data](https://data.mendeley.com/datasets/5y9wdsg2zt/2).
+This project is done to fulfil the requirement for class AI07. The aim of the project is to create a segmentation model for nuclei images based on dataset from [Kaggle](https://www.kaggle.com/competitions/data-science-bowl-2018/overview).
 
 ## Framework
-This project is created using Spyder as the main IDE. The main frameworks used in this project are Pandas, Scikit-learn and TensorFlow Keras.
+This project is created using Spyder as the main IDE. The main frameworks used in this project are Pandas, OpenCV2, scikit-learn and TensorFlow Keras.
 
 ## Methodology
 ### Data
-Images imported from Mendeley is already separated into positive and negative folder. Image is then imported then resized into 100x100 images. Images is then split into training-test dataset with ratio of 4:1.
+Images imported from Kaggle is already separated into train and test dataset with each dataset contains images of nuclei and its masks. Images and masks are then imported then resized into 128x128.
 
 ### Model
-Model is constructed with deep neural network. Image is rescaled and then data augmentation is applied to increase accuracy. The structure of the model is as follows.
+Model is constructed using a modified U-Net and to reduce the number of trainable parameter, we use pretrained model MobileNetV2 as the encoder. Data augmentation and sample weight is applied to increase accuracy. The structure of the model is as follows.
 
 ![model](model.png)
 
-Model is then trained with training dataset with batch size of 32 in 20 epochs with early stopping applied. Training stops at epoch 19 and obtain loss of 0.0172 and accuracy of 99.5%.
+Model is then trained with training dataset with batch size of 1/10th the size of the train dataset in 50 epochs. The training results in loss of 0.0312 and accuracy of 96.8%.
 
 ![loss](loss.png)
 
@@ -30,10 +30,8 @@ Model is then trained with training dataset with batch size of 32 in 20 epochs w
 ![metrics](metrics.png)
 
 ## Results
-Model is evaluated using test dataset and the following are the results.
+Figure shown below are the images of the nuclei, the true mask and the predicted masks.
 
-![result](results.png)
+![example_1](example_1.png)
 
-Example of images that is used with classification written on top. All 9 images are classified accurately.
-
-![example](example.png)
+![example_2](example_2.png)
